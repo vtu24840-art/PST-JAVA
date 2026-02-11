@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+class KthSmallest {
+    public static void main(String[] args) {
+        int[] arr = {12, 3, 5, 7, 19};
+        int k = 2;
+
+        Arrays.sort(arr);   // Sort the array
+
+        System.out.println("Kth smallest element: " + arr[k - 1]);
+    }
+}
