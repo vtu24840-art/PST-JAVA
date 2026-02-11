@@ -1,0 +1,17 @@
+int isPalinNum(int input1)
+{
+    int original = input1;
+    int reverse = 0, digit;
+
+    while (input1 > 0)
+    {
+        digit = input1 % 10;
+        reverse = reverse * 10 + digit;
+        input1 = input1 / 10;
+    }
+
+    if (original == reverse)
+        return 2;
+    else
+        return 1;
+}
